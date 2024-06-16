@@ -1,19 +1,36 @@
 import React from "react";
 
-const Navbar: React.FC = () => {
+interface NavItem {
+  name: string;
+  link: string;
+}
+
+const navItems: NavItem[] = [
+  { name: "홈", link: "/" },
+  { name: "위즈", link: "/wiz" },
+  { name: "중고거래", link: "/used" },
+  { name: "커뮤니티", link: "/community" },
+  { name: "찜", link: "/wishlist" },
+  { name: "공지사항", link: "/notices" },
+];
+
+interface NavbarProps {
+  className?: string; // optional className prop
+}
+
+const Navbar: React.FC<NavbarProps> = ({ className }) => {
   return (
-    <nav className="flex items-center justify-between">
-      <div>로고</div>
+    <nav className="flex items-center justify-between container mx-auto pt-3">
+      <img className="w-44" src="src/assets/logo/logo.png" alt="메인로고" />
       <div className="flex items-center">
         <ul className="flex">
-          <li>홈</li>
-          <li>위즈</li>
-          <li>중고거래</li>
-          <li>커뮤니티</li>
-          <li>찜</li>
-          <li>공지사항</li>
+          {navItems.map((list) => (
+            <li className="mr-5 font-medium cursor-pointer text-lg hover:text-app-blue hover:font-bold">
+              {list.name}
+            </li>
+          ))}
         </ul>
-        <button className="bg-btn-black py-2 px-4 ml-8 text-white">
+        <button className="bg-btn-black text-sm py-1.5 px-4 ml-7 text-white font-bold rounded-md shadow-md">
           로그인
         </button>
       </div>
