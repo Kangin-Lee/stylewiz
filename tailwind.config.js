@@ -10,9 +10,11 @@ export default {
       colors: {
         "btn-black": "#383838",
         "app-blue": "#3182F6",
+        "app-store": "#1C90F5",
       },
       fontFamily: {
         sans: ["Noto Sans KR", "sans-serif"],
+        logo: ["Unica One", "sans-serif"],
       },
       container: {
         center: true, // 모든 container를 자동으로 중앙 정렬

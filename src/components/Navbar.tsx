@@ -14,11 +14,7 @@ const navItems: NavItem[] = [
   { name: "공지사항", link: "/notices" },
 ];
 
-interface NavbarProps {
-  className?: string; // optional className prop
-}
-
-const Navbar: React.FC<NavbarProps> = ({ className }) => {
+const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between container mx-auto pt-3">
       <img className="w-44" src="src/assets/logo/logo.png" alt="메인로고" />
