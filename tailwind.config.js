@@ -11,6 +11,7 @@ export default {
         "btn-black": "#383838",
         "app-blue": "#3182F6",
         "app-store": "#1C90F5",
+        "home-section3": "#f5f6f7",
       },
       fontFamily: {
         sans: ["Noto Sans KR", "sans-serif"],
