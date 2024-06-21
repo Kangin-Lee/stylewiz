@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../../components/Navbar";
 import { FaApple } from "react-icons/fa";
 
-const Home: React.FC = () => {
+const HomeSection1: React.FC = () => {
   return (
     <div className="relative">
       {/* 그라데이션을 적용할 div */}
@@ -48,4 +48,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomeSection1;
