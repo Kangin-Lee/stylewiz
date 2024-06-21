@@ -1,7 +1,7 @@
 import React from "react";
-import HomeSection1 from "./Section/HomeSection1";
-import HomeSection2 from "./Section/HomeSection2";
-import HomeSection3 from "./Section/HomeSection3";
+import HomeSection1 from "./HomeSection1";
+import HomeSection2 from "./HomeSection2";
+import HomeSection3 from "./HomeSection3";
 
 const Home: React.FC = () => {
   return (
