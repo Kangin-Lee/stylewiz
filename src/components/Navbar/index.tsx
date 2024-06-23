@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
-        <button className="p-3 bg-app-blue text-orange-400 rounded-full text-xl">
+        <button className="p-3 bg-app-blue text-orange-300 rounded-full text-xl">
           <FaSun />
         </button>
         <button className="bg-btn-black text-sm py-1.5 px-4 ml-7 text-white font-bold rounded-md shadow-md">

@@ -1,5 +1,4 @@
 import React from "react";
-
 const HomeSection2: React.FC = () => {
   return (
     <section>

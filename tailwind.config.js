@@ -12,6 +12,9 @@ export default {
         "app-blue": "#3182F6",
         "app-store": "#1C90F5",
         "home-section3": "#f5f6f7",
+        "footer-back": "#403F3F",
+        facebook: "#0862f6",
+        youtude: "#f60000",
       },
       fontFamily: {
         sans: ["Noto Sans KR", "sans-serif"],
@@ -29,6 +32,9 @@ export default {
       },
       backgroundImage: {
         "home-background": 'url("src/assets/background/home-background.jpg")',
+        "home-smile": 'url("src/assets/Home/smile-section6.jpg")',
+        "home-good":
+          'url("https://img.hankyung.com/photo/201910/AA.20694611.1.jpg")',
       },
     },
   },

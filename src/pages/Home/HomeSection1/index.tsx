@@ -4,12 +4,12 @@ import { FaApple } from "react-icons/fa";
 
 const HomeSection1: React.FC = () => {
   return (
-    <div className="relative">
+    <section className="relative">
       {/* 그라데이션을 적용할 div */}
-      <div className="bg-gradient-to-b from-white to-transparent absolute inset-0 z-10 h-3/4"></div>
+      {/* <div className="bg-gradient-to-b from-white to-transparent absolute inset-0 z-10 h-3/4"></div> */}
       <Navbar /> {/* Navbar에 z-index 추가 */}
       {/* 배경 이미지가 들어갈 div */}
-      <div className="bg-home-background h-screen relative z-0">
+      <div className="bg-home-background h-screen relative z-0 bg-center bg-no-repeat bg-cover">
         {/* 메인 화면 텍스트----------------- */}
         <div className="text-center pt-40">
           <p className="font-logo text-9xl">STYLEWIZ</p>
@@ -18,8 +18,19 @@ const HomeSection1: React.FC = () => {
           </p>
         </div>
 
+        {/* 위즈찾기 인풋창----------------------- */}
+        <div className="flex justify-center my-7">
+          <input
+            type="text"
+            className="w-96 h-14 rounded-l-lg outline-none pl-3"
+          />
+          <button className="bg-app-blue text-white px-5 text-lg font-bold rounded-r-lg hover:bg-blue-400 transition duration-200 ease-in-out">
+            위즈 찾기
+          </button>
+        </div>
+
         {/* 구글플레이 앱 스토어 버튼------------ */}
-        <div className="flex justify-center mt-7">
+        <div className="flex justify-center">
           <button className="w-44 bg-app-store text-white h-14 font-bold text-xl rounded-lg opacity-80 mr-4 flex justify-center items-center">
             <FaApple className="text-3xl mr-2" />
             App Store
@@ -44,7 +55,7 @@ const HomeSection1: React.FC = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
